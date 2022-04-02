@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c085e5706d523a7bac92bb3c1d28876, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: 
+  difficulty: 2
