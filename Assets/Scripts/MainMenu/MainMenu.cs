@@ -60,7 +60,7 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Quit Game");
     }
-    public void NewButton()
+    public void PlayGame()
     {
         Debug.Log("Starting New Game");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
