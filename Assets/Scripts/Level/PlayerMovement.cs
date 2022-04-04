@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("LastHorizontal", Input.GetAxisRaw("Horizontal"));
         }
     }
+
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);

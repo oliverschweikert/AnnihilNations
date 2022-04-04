@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - Difficulty
     - GameSettings
     - MainMenu
+    - PlayerMovement
     - Settings
     - SettingsVolume
     Unity.2D.Animation.Editor.dll:
@@ -21,8 +22,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.TextMeshPro.Editor.dll:
-    - TMPro.EditorUtilities.TMP_EditorPanelUI
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
     - TMPro.TMP_Dropdown
@@ -67,39 +66,33 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1478}
-    - Class: 114
-      Script: {instanceID: 1870}
-    - Class: 114
-      Script: {instanceID: 2728}
-    - Class: 114
       Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 2956}
-    - Class: 114
-      Script: {instanceID: 3148}
-    - Class: 114
       Script: {instanceID: 3400}
+    - Class: 114
+      Script: {instanceID: 4526}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
     - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/MainMenu.unity:
     - Class: 1
@@ -165,15 +158,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3684}
     - Class: 114
-      Script: {instanceID: 4606}
+      Script: {instanceID: 4608}
     - Class: 114
-      Script: {instanceID: 4790}
+      Script: {instanceID: 4792}
     - Class: 114
-      Script: {instanceID: 4814}
+      Script: {instanceID: 4816}
     - Class: 114
-      Script: {instanceID: 4954}
+      Script: {instanceID: 4956}
     - Class: 114
-      Script: {instanceID: 5358}
+      Script: {instanceID: 5360}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -723,6 +716,12 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: 35e676452be7593b4c6d1e43916a1785
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerMovement
+  - hash:
+      serializedVersion: 2
       Hash: 8b1fe5dfdcf943fb3b72506b9f19335f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -953,4 +952,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game.unity
-  playerPath: /home/oliver/Dev/IT717-GameDev/AnnihilNations/Builds/alpha/v0.0.3/AnnihilNations.x86_64
+  playerPath: /home/oliver/Dev/IT717-GameDev/AnnihilNations/Builds/alpha/v0.0.4/AnnihilNations.x86_64
