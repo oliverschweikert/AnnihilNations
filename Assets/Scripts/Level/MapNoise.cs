@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public static class MapNoise
 {
     public static float[,] GenerateNoise(int mapWidth, int mapHeight, int seed, Vector2 offset, float scale, int octaves, float persistance, float lacunarity)
