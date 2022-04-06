@@ -7,8 +7,8 @@ public class CharacterMovement : MonoBehaviour
 
     [Space]
     [Header("Statistics:")]
-    public Vector2 movement;
-    public Vector2 mousePosition;
+    public Vector2 movementV;
+    public Vector2 mousePositionV;
     public bool aiming;
 
     [Space]
@@ -32,56 +32,42 @@ public class CharacterMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        SetPositions();
+        MoveCharacter();
+        crosshair.transform.position = mousePositionV;
     }
-    private void SetPositions()
+    private void MoveCharacter()
     {
         if (aiming)
         {
-            rb.MovePosition(rb.position + movement.normalized * aimSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + movementV.normalized * aimSpeed * Time.fixedDeltaTime);
         }
         if (!aiming)
         {
-            rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + movementV.normalized * moveSpeed * Time.fixedDeltaTime);
         }
-        crosshair.transform.position = mousePosition;
     }
     private void ProcessInput()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
+        movementV.x = Input.GetAxisRaw("Horizontal");
+        movementV.y = Input.GetAxisRaw("Vertical");
+        mousePositionV = cam.ScreenToWorldPoint(Input.mousePosition);
         aiming = Input.GetKey(KeyCode.Mouse1);
     }
     private void AnimateCharacter()
     {
-        LookAnimation();
-        RunAnimation();
-        AimAnimation();
-
-        void AimAnimation()
+        Vector2 lookDirection = mousePositionV - rb.position;
+        animator.SetFloat("MouseX", lookDirection.normalized.x);
+        animator.SetFloat("MouseY", lookDirection.normalized.y);
+        if (!aiming)
         {
-            if (aiming)
-            {
-                animator.SetFloat("Speed", 0);
-            }
+            animator.SetFloat("Horizontal", movementV.x);
+            animator.SetFloat("Vertical", movementV.y);
+            animator.SetFloat("Speed", movementV.sqrMagnitude);
+            animator.SetFloat("Direction", Vector2.Dot(lookDirection.normalized, movementV.normalized));
         }
-
-        void RunAnimation()
+        if (aiming)
         {
-            if (!aiming)
-            {
-                animator.SetFloat("Horizontal", movement.x);
-                animator.SetFloat("Vertical", movement.y);
-                animator.SetFloat("Speed", movement.sqrMagnitude);
-            }
-        }
-
-        void LookAnimation()
-        {
-            Vector2 lookDirection = mousePosition - rb.position;
-            animator.SetFloat("MouseX", lookDirection.x);
-            animator.SetFloat("MouseY", lookDirection.y);
+            animator.SetFloat("Speed", 0);
         }
     }
 }
