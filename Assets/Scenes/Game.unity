@@ -791,6 +791,8 @@ MonoBehaviour:
   numEnemies: 50
   spawnOffset: 20
   spawnSpread: 15
+  enemiesRemaining: 0
+  enemyRemainingUI: {fileID: 399544969}
 --- !u!4 &551742858
 Transform:
   m_ObjectHideFlags: 0
@@ -2549,7 +2551,7 @@ SpriteRenderer:
   m_SortingLayerID: -1462992381
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 4910641934225343880, guid: 72560a1ebaa844fc99e08c60d4f455ad, type: 3}
+  m_Sprite: {fileID: 8886769891019345286, guid: 9c4e2a9c1902e0151ac5ac1f18af6572, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
