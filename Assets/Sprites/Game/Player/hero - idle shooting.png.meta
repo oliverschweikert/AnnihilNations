@@ -1,7 +1,94 @@
 fileFormatVersion: 2
 guid: 54c2f2b8581c83e538a04300beaad1b3
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2558537301867189737
+    second: hero - idle shooting_0
+  - first:
+      213: -8193079033384300488
+    second: hero - idle shooting_1
+  - first:
+      213: -5590095810115546157
+    second: hero - idle shooting_2
+  - first:
+      213: -3399204339331735119
+    second: hero - idle shooting_3
+  - first:
+      213: -4591888607927988499
+    second: hero - idle shooting_4
+  - first:
+      213: 2999563600886969347
+    second: hero - idle shooting_5
+  - first:
+      213: 1467589092112765276
+    second: hero - idle shooting_6
+  - first:
+      213: 3463188034649393716
+    second: hero - idle shooting_7
+  - first:
+      213: 5882736972746302025
+    second: hero - idle shooting_8
+  - first:
+      213: -6971099624282774484
+    second: hero - idle shooting_9
+  - first:
+      213: 6613449502496382287
+    second: hero - idle shooting_10
+  - first:
+      213: 3824378286102146096
+    second: hero - idle shooting_11
+  - first:
+      213: 7848613683596906894
+    second: hero - idle shooting_12
+  - first:
+      213: 6188912951274924523
+    second: hero - idle shooting_13
+  - first:
+      213: -8664189267407436162
+    second: hero - idle shooting_14
+  - first:
+      213: 3137275003729084405
+    second: hero - idle shooting_15
+  - first:
+      213: 4428496670645499328
+    second: hero - idle shooting_16
+  - first:
+      213: 6855471277513694816
+    second: hero - idle shooting_17
+  - first:
+      213: 8807625701441873022
+    second: hero - idle shooting_18
+  - first:
+      213: -3318629797434554564
+    second: hero - idle shooting_19
+  - first:
+      213: 6331169110030257414
+    second: hero - idle shooting_20
+  - first:
+      213: -8083170901319411330
+    second: hero - idle shooting_21
+  - first:
+      213: 8074962808892339083
+    second: hero - idle shooting_22
+  - first:
+      213: -8082266472950944503
+    second: hero - idle shooting_23
+  - first:
+      213: 8489590188244160775
+    second: hero - idle shooting_24
+  - first:
+      213: -3304842689529800865
+    second: hero - idle shooting_25
+  - first:
+      213: -1899772336000482755
+    second: hero - idle shooting_26
+  - first:
+      213: -8181572796406267035
+    second: hero - idle shooting_27
+  - first:
+      213: 4630624321768379614
+    second: hero - idle shooting_28
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +119,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,12 +128,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +155,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +176,616 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: hero - idle shooting_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1219
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5516ece10c18320800000000000000
+      internalID: 2558537301867189737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_1
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1219
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8309d6627065c4e80800000000000000
+      internalID: -8193079033384300488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_2
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1219
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3d9a17a7dfb62b0800000000000000
+      internalID: -5590095810115546157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_3
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1219
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b16a23c9a993d0d0800000000000000
+      internalID: -3399204339331735119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_4
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1048
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee0a44d3a55640c0800000000000000
+      internalID: -4591888607927988499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_5
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1048
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3043f00e33790a920800000000000000
+      internalID: 2999563600886969347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_6
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1048
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c519e9fe08ced5410800000000000000
+      internalID: 1467589092112765276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_7
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 877
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a09a33b27bf0030800000000000000
+      internalID: 3463188034649393716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_8
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 877
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942a99fcb1ea3a150800000000000000
+      internalID: 5882736972746302025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_9
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 877
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2424c083dda14f90800000000000000
+      internalID: -6971099624282774484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_10
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 877
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4dd7407841b7cb50800000000000000
+      internalID: 6613449502496382287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_11
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 706
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ce5dde9cbe21530800000000000000
+      internalID: 3824378286102146096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_12
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 706
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81501ebf80ebec60800000000000000
+      internalID: 7848613683596906894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_13
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 706
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be96e86f98f63e550800000000000000
+      internalID: 6188912951274924523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_14
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 706
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e768d6124cd92c780800000000000000
+      internalID: -8664189267407436162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_15
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fffbff6ef6d98b20800000000000000
+      internalID: 3137275003729084405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_16
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c533de324e257d30800000000000000
+      internalID: 4428496670645499328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_17
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ed8181ec6832f50800000000000000
+      internalID: 6855471277513694816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_18
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e742b0129e8fa3a70800000000000000
+      internalID: 8807625701441873022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_19
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 364
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3703e638cbd1f1d0800000000000000
+      internalID: -3318629797434554564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_20
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 364
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d8748f2c4dcd750800000000000000
+      internalID: 6331169110030257414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_21
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 364
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79151844eec2df80800000000000000
+      internalID: -8083170901319411330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_22
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 364
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83b48644e7001070800000000000000
+      internalID: 8074962808892339083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_23
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 193
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90da5bbe67506df80800000000000000
+      internalID: -8082266472950944503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_24
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 193
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7015fe2eb4511d570800000000000000
+      internalID: 8489590188244160775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_25
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 193
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57970c6517d222d0800000000000000
+      internalID: -3304842689529800865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_26
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 22
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32c3963027a2a5e0800000000000000
+      internalID: -1899772336000482755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_27
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 22
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5638436b3e6357e80800000000000000
+      internalID: -8181572796406267035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - idle shooting_28
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 22
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4d94b5948434040800000000000000
+      internalID: 4630624321768379614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
