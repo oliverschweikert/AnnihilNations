@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour
 {
     public GameObject player, enemyPrefab, wavePrefab;
-    public int numEnemies, spawnOffset, spawnSpread;
+    public int numEnemies, spawnOffset, spawnSpread, enemiesRemaining;
+    public TMP_Text enemyRemainingUI;
     int waveCount;
     private void Start()
     {
@@ -22,6 +24,8 @@ public class SpawnEnemy : MonoBehaviour
     private void CreateWave()
     {
         waveCount++;
+        enemiesRemaining = numEnemies;
+        enemyRemainingUI.SetText(enemiesRemaining.ToString());
         GameObject wave = GameObject.Instantiate(wavePrefab);
         wave.name = $"Wave{waveCount}";
         Vector3 spawningPosition = new Vector3(0, 0, 0);
