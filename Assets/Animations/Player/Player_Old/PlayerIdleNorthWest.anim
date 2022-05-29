@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerWalkingEast
+  m_Name: PlayerIdleNorthWest
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,18 +20,14 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -5956568724935160333, guid: 72560a1ebaa844fc99e08c60d4f455ad, type: 3}
-    - time: 0.125
-      value: {fileID: -3971713130880618991, guid: 72560a1ebaa844fc99e08c60d4f455ad, type: 3}
-    - time: 0.25
-      value: {fileID: 1965883120196525644, guid: 72560a1ebaa844fc99e08c60d4f455ad, type: 3}
-    - time: 0.375
-      value: {fileID: -6822179802672142034, guid: 72560a1ebaa844fc99e08c60d4f455ad, type: 3}
+      value: {fileID: -782213171505394271, guid: 9c4e2a9c1902e0151ac5ac1f18af6572, type: 3}
+    - time: 0.5
+      value: {fileID: -8285029452654269499, guid: 9c4e2a9c1902e0151ac5ac1f18af6572, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 8
+  m_SampleRate: 2
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -46,16 +42,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -5956568724935160333, guid: 72560a1ebaa844fc99e08c60d4f455ad, type: 3}
-    - {fileID: -3971713130880618991, guid: 72560a1ebaa844fc99e08c60d4f455ad, type: 3}
-    - {fileID: 1965883120196525644, guid: 72560a1ebaa844fc99e08c60d4f455ad, type: 3}
-    - {fileID: -6822179802672142034, guid: 72560a1ebaa844fc99e08c60d4f455ad, type: 3}
+    - {fileID: -782213171505394271, guid: 9c4e2a9c1902e0151ac5ac1f18af6572, type: 3}
+    - {fileID: -8285029452654269499, guid: 9c4e2a9c1902e0151ac5ac1f18af6572, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.5
+    m_StopTime: 1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
