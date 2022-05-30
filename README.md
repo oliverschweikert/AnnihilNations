@@ -1,6 +1,11 @@
 # AnnihilNations
 
-**README Todo (Documentation)**
+## External Documentation
+
+- [UI Design + Asset Creation](https://github.com/oliverschweikert/AnnihilNations/tree/documentation/docs/UI%20+%20Asset%20Design.md)
+
+## Todo (Documentation)
+
 - Explain the techniques used for map generation
 - Explain the techniques used for character animation
 - Explain the techniques used for character control
