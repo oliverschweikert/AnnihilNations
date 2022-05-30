@@ -1,6 +1,6 @@
 # UI Design + Asset Creation
 
-This area of development was overseen by @AmeilBurke, due to his expertise in this area. Regarding AnnihilNations, his responsibilities were:
+This area of development was overseen by Ameil (@AmeilBurke), due to his expertise in this area. Regarding AnnihilNations, his responsibilities were:
 
 - Designing & animating the sprites
 - Designing the main, pause & options menu
