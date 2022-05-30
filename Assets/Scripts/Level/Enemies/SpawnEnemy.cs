@@ -12,12 +12,13 @@ public class SpawnEnemy : MonoBehaviour
     private void Start()
     {
         waveCount = 0;
+        enemiesRemaining = 0;
     }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            CreateWave();
+            if (enemiesRemaining == 0) CreateWave();
         }
     }
 
