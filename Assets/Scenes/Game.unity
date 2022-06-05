@@ -2583,6 +2583,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f56a6d134d9f066549f1b15f84a90d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathScreenUI: {fileID: 1300999124}
+  player: {fileID: 2054664539}
 --- !u!114 &1520160101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2599,7 +2601,7 @@ MonoBehaviour:
   emptyHeart: {fileID: 2800000, guid: 2416952ac2c4a6e6690792a9b350afb3, type: 3}
   heart: {fileID: 6844065762902323733, guid: 9f4f0207d70d4fdd7b0b4b8099236b7a, type: 3}
   healthBar: {fileID: 1238756774}
-  player: {fileID: 2054664538}
+  player: {fileID: 2054664539}
 --- !u!1 &1623855112
 GameObject:
   m_ObjectHideFlags: 0
@@ -3247,37 +3249,15 @@ GameObject:
   - component: {fileID: 2054664534}
   - component: {fileID: 2054664533}
   - component: {fileID: 2054664537}
-  - component: {fileID: 2054664538}
-  - component: {fileID: 2054664532}
+  - component: {fileID: 2054664539}
   - component: {fileID: 2054664536}
   m_Layer: 7
-  m_Name: Character
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2054664532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2054664531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b69b05be767adb1fb9be975cd206389, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  aimSpeed: 1
-  movementV: {x: 0, y: 0}
-  mousePositionV: {x: 0, y: 0}
-  aiming: 0
-  rb: {fileID: 2054664533}
-  cam: {fileID: 519420031}
-  animator: {fileID: 2054664536}
-  crosshair: {fileID: 755205498}
 --- !u!50 &2054664533
 Rigidbody2D:
   serializedVersion: 4
@@ -3400,7 +3380,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
---- !u!114 &2054664538
+--- !u!114 &2054664539
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3409,13 +3389,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2054664531}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc5f261ad14319176ab484b5e7015af8, type: 3}
+  m_Script: {fileID: 11500000, guid: b9737af127e43519db88d6fa77f1f0b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 2054664536}
+  moveSpeed: 5
+  aimSpeed: 1
+  aiming: 0
   totalHealth: 5
   currentHealth: 0
-  hm: {fileID: 0}
+  movementV: {x: 0, y: 0}
+  mousePositionV: {x: 0, y: 0}
+  rb: {fileID: 2054664533}
+  cam: {fileID: 519420031}
+  animator: {fileID: 2054664536}
+  crosshair: {fileID: 755205498}
+  hm: {fileID: 1520160101}
+  ds: {fileID: 1520160100}
 --- !u!1 &2069597674
 GameObject:
   m_ObjectHideFlags: 0

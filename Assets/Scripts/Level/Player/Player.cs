@@ -1,39 +1,40 @@
 using UnityEngine;
-public class CharacterMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    [Header("Attributes:")]
-    public float moveSpeed = 5f;
-    public float aimSpeed = 1f;
-
-    [Space]
-    [Header("Statistics:")]
-    public Vector2 movementV;
-    public Vector2 mousePositionV;
-    public bool aiming;
-
-    [Space]
-    [Header("References:")]
+    public float moveSpeed = 5f, aimSpeed = 1f;
+    public bool aiming, dead;
+    public int totalHealth, currentHealth;
+    public Vector2 movementV, mousePositionV;
     public Rigidbody2D rb;
     public Camera cam;
     public Animator animator;
     public GameObject crosshair;
+    public HealthManager hm;
+    public DeathScreen ds;
 
     private void Start()
     {
         Cursor.visible = false;
+        animator.SetBool("Dead", false);
     }
     private void Update()
     {
         ProcessInput();
-        if (!PauseMenu.gameIsPaused)
+        if (!PauseMenu.gameIsPaused && !dead)
         {
+            if (Input.GetKeyDown(KeyCode.Mouse0)) animator.SetBool("Shooting", true);
+            if (Input.GetKeyUp(KeyCode.Mouse0)) animator.SetBool("Shooting", false);
+            if (Input.GetKeyDown(KeyCode.Mouse1)) TakeDamage(1);
             AnimateCharacter();
         }
     }
     private void FixedUpdate()
     {
-        MoveCharacter();
-        crosshair.transform.position = mousePositionV;
+        if (currentHealth > 0)
+        {
+            MoveCharacter();
+            crosshair.transform.position = mousePositionV;
+        }
     }
     private void MoveCharacter()
     {
@@ -69,5 +70,18 @@ public class CharacterMovement : MonoBehaviour
         {
             animator.SetFloat("Speed", 0);
         }
+    }
+    public void TakeDamage(int damage)
+    {
+        currentHealth = currentHealth - damage < 0 ? 0 : currentHealth - damage;
+        hm.RedrawHearts();
+        if (currentHealth == 0)
+        {
+            animator.SetBool("Dead", true);
+        }
+    }
+    public void KillPlayer()
+    {
+        dead = true;
     }
 }

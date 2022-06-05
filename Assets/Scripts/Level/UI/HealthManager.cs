@@ -9,7 +9,7 @@ public class HealthManager : MonoBehaviour
     public Texture2D fullHeart, emptyHeart;
     public RawImage heart;
     public Transform healthBar;
-    public CharacterCombat player;
+    public Player player;
     float offset = 30, heartSize = 50, padding = 15;
     List<RawImage> hearts = new List<RawImage>();
     void Start()
