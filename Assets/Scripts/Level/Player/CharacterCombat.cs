@@ -5,6 +5,8 @@ using UnityEngine;
 public class CharacterCombat : MonoBehaviour
 {
     public Animator animator;
+    public int totalHealth, currentHealth;
+    public HealthManager hm;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -15,5 +17,15 @@ public class CharacterCombat : MonoBehaviour
         {
             animator.SetBool("Shooting", false);
         }
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            TakeDamage(1);
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth = currentHealth - damage < 0 ? 0 : currentHealth - damage;
+        hm.RedrawHearts();
     }
 }
