@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: 38bd7632822a94093b8c41b45504e2f8
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4580015519926417533
+    second: enemy moving attack_0
+  - first:
+      213: 5258607396551746676
+    second: enemy moving attack_1
+  - first:
+      213: 391094837931477088
+    second: enemy moving attack_2
+  - first:
+      213: -8135184245057429132
+    second: enemy moving attack_3
+  - first:
+      213: 5327769891547824596
+    second: enemy moving attack_4
+  - first:
+      213: -7551086638026040174
+    second: enemy moving attack_5
+  - first:
+      213: 7146605050539103985
+    second: enemy moving attack_6
+  - first:
+      213: 3477865615378928242
+    second: enemy moving attack_7
+  - first:
+      213: -7110743202082242225
+    second: enemy moving attack_8
+  - first:
+      213: 710725338110297242
+    second: enemy moving attack_9
+  - first:
+      213: 8221592640453273065
+    second: enemy moving attack_10
+  - first:
+      213: 2093798433323465296
+    second: enemy moving attack_11
+  - first:
+      213: -2854804514555031563
+    second: enemy moving attack_12
+  - first:
+      213: 1476725275182257333
+    second: enemy moving attack_13
+  - first:
+      213: 4309814069427938243
+    second: enemy moving attack_14
+  - first:
+      213: -7509263752670570883
+    second: enemy moving attack_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +80,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,12 +89,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +116,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +137,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: enemy moving attack_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1215
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387820d86248070c0800000000000000
+      internalID: -4580015519926417533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1215
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47465bcd0935af840800000000000000
+      internalID: 5258607396551746676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_2
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1044
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0680568dea27d6500800000000000000
+      internalID: 391094837931477088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_3
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1044
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4716ffaf7050a1f80800000000000000
+      internalID: -8135184245057429132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 873
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1cab61d7a00f940800000000000000
+      internalID: 5327769891547824596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_5
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 873
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c5248c5b6253790800000000000000
+      internalID: -7551086638026040174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_6
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 702
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6556bdd67dd2360800000000000000
+      internalID: 7146605050539103985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_7
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 702
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272d435c95cd34030800000000000000
+      internalID: 3477865615378928242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 531
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f414dd66bb0915d90800000000000000
+      internalID: -7110743202082242225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_9
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 531
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a940feeede00dd900800000000000000
+      internalID: 710725338110297242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_10
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 360
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5ee2652f6f81270800000000000000
+      internalID: 8221592640453273065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_11
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 360
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ab389e49aae0d10800000000000000
+      internalID: 2093798433323465296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 189
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff04ce5b62b168d0800000000000000
+      internalID: -2854804514555031563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_13
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 189
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4541250d16e7410800000000000000
+      internalID: 1476725275182257333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_14
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 18
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3ab30df098fcb30800000000000000
+      internalID: 4309814069427938243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy moving attack_15
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 18
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d769a59176cb9c790800000000000000
+      internalID: -7509263752670570883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
