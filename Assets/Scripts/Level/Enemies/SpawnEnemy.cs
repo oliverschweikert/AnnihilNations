@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class SpawnEnemy : MonoBehaviour
 {
-    public GameObject player, enemyPrefab, wavePrefab;
+    public GameObject enemyPrefab, wavePrefab;
+    public Player player;
     public int numEnemies, spawnOffset, spawnSpread, enemiesRemaining;
     public TMP_Text enemyRemainingUI;
     int waveCount;
@@ -27,9 +28,8 @@ public class SpawnEnemy : MonoBehaviour
         waveCount++;
         enemiesRemaining = numEnemies;
         enemyRemainingUI.SetText(enemiesRemaining.ToString());
-        GameObject wave = GameObject.Instantiate(wavePrefab);
+        GameObject wave = GameObject.Instantiate(wavePrefab, player.transform.position, Quaternion.identity);
         wave.name = $"Wave{waveCount}";
-        Vector3 spawningPosition = new Vector3(0, 0, 0);
         for (int i = 0; i < numEnemies; i++)
         {
             AddEnemy(wave, i);
@@ -51,15 +51,15 @@ public class SpawnEnemy : MonoBehaviour
             (int, int) offset = offsetChoices[Random.Range(0, offsetChoices.Length)];
             int xPos = initialXPos == 0 ? Random.Range(0, 2) == 0 ? initialXPos - offset.Item1 : initialXPos + offset.Item1 : initialXPos < 0 ? initialXPos - offset.Item1 : initialXPos + offset.Item1;
             int yPos = initialYPos == 0 ? Random.Range(0, 2) == 0 ? initialYPos - offset.Item2 : initialYPos + offset.Item2 : initialYPos < 0 ? initialYPos - offset.Item2 : initialYPos + offset.Item2;
-            Vector2 currentSpawn = new Vector2(xPos, yPos);
+            Vector2 currentSpawn = new Vector2(xPos + wave.transform.position.x, yPos + wave.transform.position.y);
+            spawnValidated = true;
             foreach (Vector2 v in spawnPoints)
             {
                 if (v == currentSpawn)
                 {
-                    continue;
+                    spawnValidated = false;
                 }
             }
-            spawnValidated = true;
             spawnPoints.Add(currentSpawn);
             enemy.transform.position = new Vector3(currentSpawn.x, currentSpawn.y);
             enemy.SetActive(true);
