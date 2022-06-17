@@ -3,10 +3,12 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public Player player;
-    public FirePoint firePoint;
+    public EBullet eBullet;
     public SpawnEnemy spawner;
-    public float speedOffset, stopDistance, retreatDistance;
+    public float attackRate, attackDuration, bulletForce, speedOffset, stopDistance, retreatDistance;
     Animator animator;
+    bool attacking;
+    float timeSinceAttack;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -14,10 +16,15 @@ public class Enemy : MonoBehaviour
     }
     void Update()
     {
+        timeSinceAttack += Time.deltaTime;
+        if (timeSinceAttack > attackDuration) attacking = false;
         if (!animator.GetBool("Dead"))
         {
-            MoveEnemy();
+            if (!attacking)
+                MoveEnemy();
             AnimateEnemy();
+            if (CanShoot())
+                AttackPlayer();
         }
     }
     private void AnimateEnemy()
@@ -37,6 +44,12 @@ public class Enemy : MonoBehaviour
             gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, player.transform.position, (-player.moveSpeed + speedOffset) * Time.deltaTime);
         }
     }
+    private bool CanShoot()
+    {
+        return Vector3.Distance(player.transform.position, gameObject.transform.position) >= retreatDistance
+        && Vector3.Distance(player.transform.position, gameObject.transform.position) <= stopDistance
+        && timeSinceAttack > attackRate;
+    }
     public void Kill()
     {
         spawner.UpdateRemaining();
@@ -46,5 +59,17 @@ public class Enemy : MonoBehaviour
     private void FadeCorpse()
     {
         Destroy(gameObject);
+    }
+    private void AttackPlayer()
+    {
+        attacking = true;
+        animator.SetBool("Shooting", true);
+        Vector2 bulletDir = (player.transform.position - gameObject.transform.position).normalized;
+        Vector2 bulletVelocity = bulletDir * bulletForce;
+        float bulletRotation = Mathf.Atan2(bulletDir.y, bulletDir.x) * Mathf.Rad2Deg;
+        EBullet bullet = Instantiate(eBullet, gameObject.transform.position, Quaternion.Euler(0, 0, bulletRotation));
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.velocity = bulletVelocity;
+        timeSinceAttack = 0;
     }
 }

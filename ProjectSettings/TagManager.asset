@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PBullet
   - Enemy
+  - EBullet
   layers:
   - Default
   - TransparentFX
@@ -48,6 +49,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2831974915
+    locked: 0
+  - name: EBullet
+    uniqueID: 1800273325
     locked: 0
   - name: PBullet
     uniqueID: 2902342407

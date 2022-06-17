@@ -23,7 +23,6 @@ public class Player : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Mouse0)) animator.SetBool("Shooting", true);
             if (Input.GetKeyUp(KeyCode.Mouse0)) animator.SetBool("Shooting", false);
-            if (Input.GetKeyDown(KeyCode.Mouse1)) TakeDamage(1);
             AnimateCharacter();
         }
     }
@@ -82,5 +81,13 @@ public class Player : MonoBehaviour
     public void KillPlayer()
     {
         dead = true;
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "EBullet")
+        {
+            TakeDamage(1);
+            Destroy(other.gameObject);
+        }
     }
 }

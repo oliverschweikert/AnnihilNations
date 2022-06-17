@@ -840,7 +840,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 58.2
   m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3603,7 +3603,7 @@ MonoBehaviour:
   player: {fileID: 2054664539}
   pBullets: {fileID: 1258846688}
   pBullet: {fileID: -3002862713974603412, guid: caad244d71460d4d6959e8cf4419865c, type: 3}
-  bulletVelocity: 3
+  bulletVelocity: 7.5
 --- !u!28 &1787056779
 Texture2D:
   m_ObjectHideFlags: 0
@@ -4435,7 +4435,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 2054664531}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
