@@ -22,7 +22,6 @@ public class SpawnEnemy : MonoBehaviour
             if (enemiesRemaining == 0) CreateWave();
         }
     }
-
     private void CreateWave()
     {
         waveCount++;
@@ -35,10 +34,10 @@ public class SpawnEnemy : MonoBehaviour
             AddEnemy(wave, i);
         }
     }
-
     private void AddEnemy(GameObject wave, int enemyID)
     {
-        GameObject enemy = GameObject.Instantiate(enemyPrefab, wave.transform);
+        GameObject enemy = Instantiate(enemyPrefab, wave.transform);
+        enemy.GetComponent<Enemy>().spawner = gameObject.GetComponent<SpawnEnemy>();
         enemy.name = $"enemy{enemyID + 1}";
         enemy.SetActive(false);
         bool spawnValidated = false;
@@ -64,5 +63,10 @@ public class SpawnEnemy : MonoBehaviour
             enemy.transform.position = new Vector3(currentSpawn.x, currentSpawn.y);
             enemy.SetActive(true);
         }
+    }
+    public void UpdateRemaining()
+    {
+        enemiesRemaining--;
+        enemyRemainingUI.SetText(enemiesRemaining.ToString());
     }
 }

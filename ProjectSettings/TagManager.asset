@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PBullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -46,4 +48,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2831974915
+    locked: 0
+  - name: PBullet
+    uniqueID: 2902342407
     locked: 0
