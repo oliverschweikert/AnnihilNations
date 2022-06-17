@@ -4,7 +4,7 @@ public class Player : MonoBehaviour
     public float moveSpeed = 5f, aimSpeed = 1f;
     public bool aiming, dead;
     public int totalHealth, currentHealth;
-    public Vector2 movementV, mousePositionV;
+    public Vector2 movementV, mousePositionV, lookDir;
     public Rigidbody2D rb;
     public Camera cam;
     public Animator animator;
@@ -56,15 +56,15 @@ public class Player : MonoBehaviour
     }
     private void AnimateCharacter()
     {
-        Vector2 lookDirection = mousePositionV - rb.position;
-        animator.SetFloat("MouseX", lookDirection.normalized.x);
-        animator.SetFloat("MouseY", lookDirection.normalized.y);
+        lookDir = mousePositionV - rb.position;
+        animator.SetFloat("MouseX", lookDir.normalized.x);
+        animator.SetFloat("MouseY", lookDir.normalized.y);
         if (!aiming)
         {
             animator.SetFloat("Horizontal", movementV.x);
             animator.SetFloat("Vertical", movementV.y);
             animator.SetFloat("Speed", movementV.sqrMagnitude);
-            animator.SetFloat("Direction", Vector2.Dot(lookDirection.normalized, movementV.normalized));
+            animator.SetFloat("Direction", Vector2.Dot(lookDir.normalized, movementV.normalized));
         }
         if (aiming)
         {
