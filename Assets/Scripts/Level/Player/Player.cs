@@ -11,7 +11,6 @@ public class Player : MonoBehaviour
     public GameObject crosshair;
     public HealthManager hm;
     public DeathScreen ds;
-
     private void Start()
     {
         Cursor.visible = false;
