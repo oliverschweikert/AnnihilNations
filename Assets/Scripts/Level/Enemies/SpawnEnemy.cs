@@ -6,8 +6,9 @@ using UnityEngine;
 public class SpawnEnemy : MonoBehaviour
 {
     public GameObject enemyPrefab, wavePrefab;
+    public GameSettings settings;
     public Player player;
-    public int numEnemies, spawnOffset, spawnSpread, enemiesRemaining;
+    public int spawnOffset, spawnSpread, enemiesRemaining;
     public TMP_Text enemyRemainingUI;
     int waveCount;
     private void Start()
@@ -19,12 +20,28 @@ public class SpawnEnemy : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (enemiesRemaining == 0) CreateWave();
+            if (enemiesRemaining == 0)
+                switch (settings.difficulty)
+                {
+                    case GameSettings.Difficulty.Easy:
+                        CreateWave(5);
+                        break;
+                    case GameSettings.Difficulty.Medium:
+                        CreateWave(10);
+                        break;
+                    case GameSettings.Difficulty.Hard:
+                        CreateWave(50);
+                        break;
+                    default:
+                        CreateWave(1);
+                        break;
+                }
         }
     }
-    private void CreateWave()
+    private void CreateWave(int numEnemies)
     {
         waveCount++;
+        numEnemies *= waveCount;
         enemiesRemaining = numEnemies;
         enemyRemainingUI.SetText(enemiesRemaining.ToString());
         GameObject wave = GameObject.Instantiate(wavePrefab, player.transform.position, Quaternion.identity);
