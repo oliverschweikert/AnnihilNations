@@ -10,14 +10,16 @@ public class Player : MonoBehaviour
     public Animator animator;
     public GameObject crosshair;
     public HealthManager hm;
-    public DeathScreen ds;
+    float timeSinceMelee;
     private void Start()
     {
+        timeSinceMelee = 0;
         Cursor.visible = false;
         animator.SetBool("Dead", false);
     }
     private void Update()
     {
+        timeSinceMelee += Time.deltaTime;
         ProcessInput();
         if (!PauseMenu.gameIsPaused && !dead)
         {
@@ -81,6 +83,15 @@ public class Player : MonoBehaviour
     public void KillPlayer()
     {
         dead = true;
+    }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Enemy")
+            if (timeSinceMelee > 1)
+            {
+                TakeDamage(1);
+                timeSinceMelee = 0;
+            }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

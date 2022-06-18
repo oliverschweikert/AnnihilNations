@@ -9,11 +9,12 @@ public class SpawnEnemy : MonoBehaviour
     public GameSettings settings;
     public Player player;
     public int spawnOffset, spawnSpread, enemiesRemaining;
-    public TMP_Text enemyRemainingUI;
+    public TMP_Text enemyCountUI, waveNumUI;
     int waveCount;
     private void Start()
     {
         waveCount = 0;
+        waveNumUI.SetText($"Wave: {waveCount}");
         enemiesRemaining = 0;
     }
     void Update()
@@ -41,9 +42,11 @@ public class SpawnEnemy : MonoBehaviour
     private void CreateWave(int numEnemies)
     {
         waveCount++;
+        waveNumUI.SetText($"Wave: {waveCount}");
         numEnemies *= waveCount;
         enemiesRemaining = numEnemies;
-        enemyRemainingUI.SetText(enemiesRemaining.ToString());
+        enemyCountUI.SetText($"Enemies Remaining: {enemiesRemaining}");
+        enemyCountUI.gameObject.SetActive(true);
         GameObject wave = GameObject.Instantiate(wavePrefab, player.transform.position, Quaternion.identity);
         wave.name = $"Wave{waveCount}";
         for (int i = 0; i < numEnemies; i++)
@@ -84,6 +87,9 @@ public class SpawnEnemy : MonoBehaviour
     public void UpdateRemaining()
     {
         enemiesRemaining--;
-        enemyRemainingUI.SetText(enemiesRemaining.ToString());
+        if (enemiesRemaining == 0)
+            enemyCountUI.SetText($"Wave Complete");
+        else
+            enemyCountUI.SetText($"Enemies Remaining: {enemiesRemaining}");
     }
 }

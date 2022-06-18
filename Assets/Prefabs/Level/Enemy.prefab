@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7606800077325697426}
   - component: {fileID: 7606800077325697429}
   - component: {fileID: 7606800077325697428}
-  - component: {fileID: 6624140420993841612}
   - component: {fileID: -2697432700148664920}
   - component: {fileID: 7814930814081596136}
+  - component: {fileID: 7345246484613488444}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7606800077325697431}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,7 +98,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 1
-  m_Mass: 0.4511458
+  m_Mass: 0.38952637
   m_LinearDrag: 5
   m_AngularDrag: 1000
   m_GravityScale: 0
@@ -107,22 +107,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &6624140420993841612
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7606800077325697431}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.012752503, y: 0.094935656}
-  serializedVersion: 2
-  m_Radius: 0.3789514
 --- !u!114 &-2697432700148664920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,6 +128,7 @@ MonoBehaviour:
   speedOffset: 1
   stopDistance: 10
   retreatDistance: 5
+  wanderRadius: 10
 --- !u!95 &7814930814081596136
 Animator:
   serializedVersion: 3
@@ -163,3 +148,68 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &7345246484613488444
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606800077325697431}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.3320312, y: 1.3330078}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.30078125, y: -0.11816406}
+      - {x: 0.32421875, y: -0.11816406}
+      - {x: 0.58984375, y: -0.12597656}
+      - {x: 0.59765625, y: -0.09472656}
+      - {x: 0.59765625, y: -0.040039062}
+      - {x: 0.58203125, y: -0.040039062}
+      - {x: 0.59765625, y: -0.016601562}
+      - {x: 0.59765625, y: 0.030273438}
+      - {x: 0.58203125, y: 0.045898438}
+      - {x: 0.32421875, y: 0.053710938}
+      - {x: 0.25390625, y: 0.09277344}
+      - {x: 0.17578125, y: 0.17871094}
+      - {x: 0.13671875, y: 0.19433594}
+      - {x: 0.22265625, y: 0.31933594}
+      - {x: 0.23828125, y: 0.45214844}
+      - {x: 0.18359375, y: 0.49902344}
+      - {x: 0.04296875, y: 0.49902344}
+      - {x: -0.01953125, y: 0.47558594}
+      - {x: -0.15234375, y: 0.32714844}
+      - {x: -0.14453125, y: 0.19433594}
+      - {x: -0.17578125, y: 0.17871094}
+      - {x: -0.26953125, y: 0.10058594}
+      - {x: -0.31640625, y: 0.038085938}
+      - {x: -0.31640625, y: 0.0068359375}
+      - {x: -0.47265625, y: -0.0009765625}
+      - {x: -0.47265625, y: -0.06347656}
+      - {x: -0.46484375, y: -0.08691406}
+      - {x: -0.23046875, y: -0.14941406}
+      - {x: -0.15234375, y: -0.22753906}
+      - {x: -0.12890625, y: -0.23535156}
+      - {x: -0.11328125, y: -0.31347656}
+      - {x: -0.08203125, y: -0.32128906}
+      - {x: -0.02734375, y: -0.32128906}
+      - {x: 0.01171875, y: -0.22753906}
+      - {x: 0.12890625, y: -0.25097656}
+      - {x: 0.23046875, y: -0.14941406}
+    - - {x: 0.08203125, y: 0.38183594}
+      - {x: 0.06640625, y: 0.42089844}
+      - {x: 0.14453125, y: 0.42089844}
+      - {x: 0.14453125, y: 0.34277344}

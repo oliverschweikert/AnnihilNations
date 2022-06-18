@@ -6,18 +6,29 @@ public class Enemy : MonoBehaviour
     public EBullet eBullet;
     public SpawnEnemy spawner;
     public float attackRate, attackDuration, bulletForce, speedOffset, stopDistance, retreatDistance;
+    public int wanderRadius;
     Animator animator;
-    bool attacking;
+    bool attacking, wandering;
     float timeSinceAttack;
+    Vector3 wanderPos;
+    int[] multiplier = new int[] { 1, -1 };
     void Start()
     {
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        StartWandering();
     }
     void Update()
     {
         timeSinceAttack += Time.deltaTime;
-        if (timeSinceAttack > attackDuration) attacking = false;
+        if (timeSinceAttack > attackDuration)
+        {
+            attacking = false;
+            if (timeSinceAttack < attackRate)
+                wandering = true;
+            else
+                wandering = false;
+        };
         if (!animator.GetBool("Dead"))
         {
             if (!attacking)
@@ -35,14 +46,29 @@ public class Enemy : MonoBehaviour
     }
     private void MoveEnemy()
     {
-        if (Vector3.Distance(player.transform.position, gameObject.transform.position) > stopDistance)
+        if (!wandering)
         {
-            gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, player.transform.position, (player.moveSpeed + speedOffset) * Time.deltaTime);
+            if (Vector3.Distance(player.transform.position, gameObject.transform.position) > stopDistance)
+            {
+                gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, player.transform.position, (player.moveSpeed + speedOffset) * Time.deltaTime);
+            }
+            if (Vector3.Distance(player.transform.position, gameObject.transform.position) < retreatDistance)
+            {
+                gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, player.transform.position, (-player.moveSpeed + speedOffset) * Time.deltaTime);
+            }
         }
-        if (Vector3.Distance(player.transform.position, gameObject.transform.position) < retreatDistance)
+        if (wandering)
         {
-            gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, player.transform.position, (-player.moveSpeed + speedOffset) * Time.deltaTime);
+            gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, wanderPos, (player.moveSpeed + speedOffset) * Time.deltaTime);
         }
+    }
+    private void StartWandering()
+    {
+        var randomX = (Random.Range(0, wanderRadius) + 10) * multiplier[Random.Range(0, 2)];
+        var randomY = (Random.Range(0, wanderRadius) + 10) * multiplier[Random.Range(0, 2)];
+        Vector3 wanderVector = new Vector3(randomX, randomY);
+        wanderPos = wanderVector + player.transform.position;
+        wandering = true;
     }
     private bool CanShoot()
     {
@@ -62,6 +88,7 @@ public class Enemy : MonoBehaviour
     }
     private void AttackPlayer()
     {
+        wandering = false;
         attacking = true;
         animator.SetBool("Shooting", true);
         Vector2 bulletDir = (player.transform.position - gameObject.transform.position).normalized;
@@ -71,5 +98,6 @@ public class Enemy : MonoBehaviour
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.velocity = bulletVelocity;
         timeSinceAttack = 0;
+        StartWandering();
     }
 }

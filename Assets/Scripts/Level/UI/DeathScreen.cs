@@ -10,6 +10,7 @@ public class DeathScreen : MonoBehaviour
     public Player player;
     private void Start()
     {
+        deathScreenUI.gameObject.SetActive(false);
         deathScreenUI.interactable = false;
         uiElements.interactable = false;
         uiElements.alpha = 0;
@@ -19,6 +20,7 @@ public class DeathScreen : MonoBehaviour
     {
         if (player.dead)
         {
+            deathScreenUI.gameObject.SetActive(true);
             deathScreenUI.interactable = true;
             Cursor.visible = true;
             if (deathScreenUI.alpha < .85) deathScreenUI.alpha += (float)(Time.deltaTime / 5);
