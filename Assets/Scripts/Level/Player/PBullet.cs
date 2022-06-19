@@ -18,7 +18,8 @@ public class PBullet : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Destroy(gameObject);
-            other.gameObject.GetComponent<Enemy>().Kill();
+            if (!other.gameObject.GetComponent<Enemy>().dead)
+                other.gameObject.GetComponent<Enemy>().Kill();
         }
     }
 }

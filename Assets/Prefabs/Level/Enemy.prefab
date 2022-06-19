@@ -121,9 +121,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   eBullet: {fileID: 4917577535906970674, guid: a8ad043bec3701a06b7ec0c69b8c53ec, type: 3}
+  eBullets: {fileID: 0}
   spawner: {fileID: 0}
-  attackRate: 2
-  attackDuration: 1
+  attackRate: 1
+  attackDuration: 0.2
   bulletForce: 6
   speedOffset: 1
   stopDistance: 10

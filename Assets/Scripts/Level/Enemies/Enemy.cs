@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections.Generic;
+using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
@@ -7,14 +9,17 @@ public class Enemy : MonoBehaviour
     public GameObject eBullets;
     public SpawnEnemy spawner;
     public float attackRate, attackDuration, bulletForce, speedOffset, stopDistance, retreatDistance;
+    public List<EBullet> currentBullets;
     public int wanderRadius;
     Animator animator;
     bool attacking, wandering;
+    public bool dead;
     float timeSinceAttack;
     Vector3 wanderPos;
     int[] multiplier = new int[] { 1, -1 };
     void Start()
     {
+        currentBullets = new List<EBullet>();
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         StartWandering();
@@ -75,10 +80,12 @@ public class Enemy : MonoBehaviour
     {
         return Vector3.Distance(player.transform.position, gameObject.transform.position) >= retreatDistance
         && Vector3.Distance(player.transform.position, gameObject.transform.position) <= stopDistance
-        && timeSinceAttack > attackRate;
+        && timeSinceAttack > attackRate
+        && currentBullets.Count < 2;
     }
     public void Kill()
     {
+        dead = true;
         spawner.UpdateRemaining();
         GetComponent<Rigidbody2D>().simulated = false;
         animator.SetBool("Dead", true);
@@ -96,7 +103,9 @@ public class Enemy : MonoBehaviour
         Vector2 bulletVelocity = bulletDir * bulletForce;
         float bulletRotation = Mathf.Atan2(bulletDir.y, bulletDir.x) * Mathf.Rad2Deg;
         EBullet bullet = Instantiate(eBullet, gameObject.transform.position, Quaternion.Euler(0, 0, bulletRotation), eBullets.transform);
+        currentBullets.Add(bullet);
         bullet.player = player;
+        bullet.enemy = gameObject.GetComponent<Enemy>();
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.velocity = bulletVelocity;
         timeSinceAttack = 0;
