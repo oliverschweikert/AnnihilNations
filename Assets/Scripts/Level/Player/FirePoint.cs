@@ -8,7 +8,7 @@ public class FirePoint : MonoBehaviour
     public Player player;
     public PBullets pBullets;
     public PBullet pBullet;
-    public float bulletVelocity;
+    public float bulletVelocity, shootDelay;
     float timeSinceShoot;
     private void Start()
     {
@@ -17,7 +17,7 @@ public class FirePoint : MonoBehaviour
     void Update()
     {
         timeSinceShoot += Time.deltaTime;
-        if (Input.GetMouseButton(0) && timeSinceShoot >= .2)
+        if (Input.GetMouseButton(0) && timeSinceShoot >= shootDelay)
             Shoot();
     }
     private void Shoot()

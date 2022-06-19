@@ -73,7 +73,7 @@ public class Player : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
-        currentHealth = currentHealth - damage < 0 ? 0 : currentHealth - damage;
+        // currentHealth = currentHealth - damage < 0 ? 0 : currentHealth - damage;
         hm.RedrawHearts();
         if (currentHealth == 0)
         {

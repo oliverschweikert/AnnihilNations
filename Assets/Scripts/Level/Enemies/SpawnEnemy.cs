@@ -8,8 +8,9 @@ public class SpawnEnemy : MonoBehaviour
     public GameObject enemyPrefab, wavePrefab;
     public GameSettings settings;
     public Player player;
-    public int spawnOffset, spawnSpread, enemiesRemaining;
+    public int spawnOffset, spawnSpread, enemiesRemaining, enemiesEasy, enemiesMedium, enemiesHard;
     public TMP_Text enemyCountUI, waveNumUI;
+    public GameObject eBullets;
     int waveCount;
     private void Start()
     {
@@ -25,13 +26,13 @@ public class SpawnEnemy : MonoBehaviour
                 switch (settings.difficulty)
                 {
                     case GameSettings.Difficulty.Easy:
-                        CreateWave(5);
+                        CreateWave(enemiesEasy);
                         break;
                     case GameSettings.Difficulty.Medium:
-                        CreateWave(10);
+                        CreateWave(enemiesMedium);
                         break;
                     case GameSettings.Difficulty.Hard:
-                        CreateWave(50);
+                        CreateWave(enemiesHard);
                         break;
                     default:
                         CreateWave(1);
@@ -58,6 +59,7 @@ public class SpawnEnemy : MonoBehaviour
     {
         GameObject enemy = Instantiate(enemyPrefab, wave.transform);
         enemy.GetComponent<Enemy>().spawner = gameObject.GetComponent<SpawnEnemy>();
+        enemy.GetComponent<Enemy>().eBullets = eBullets;
         enemy.name = $"enemy{enemyID + 1}";
         enemy.SetActive(false);
         bool spawnValidated = false;

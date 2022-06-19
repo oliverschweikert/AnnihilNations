@@ -1011,8 +1011,12 @@ MonoBehaviour:
   spawnOffset: 20
   spawnSpread: 15
   enemiesRemaining: 0
+  enemiesEasy: 10
+  enemiesMedium: 25
+  enemiesHard: 100
   enemyCountUI: {fileID: 399544969}
   waveNumUI: {fileID: 674907992}
+  eBullets: {fileID: 569103105}
 --- !u!4 &551742858
 Transform:
   m_ObjectHideFlags: 0
@@ -1026,6 +1030,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &569103105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 569103106}
+  m_Layer: 0
+  m_Name: EBullets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &569103106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569103105}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &674907990
 GameObject:
@@ -2821,6 +2855,7 @@ MonoBehaviour:
   pBullets: {fileID: 1258846688}
   pBullet: {fileID: -3002862713974603412, guid: caad244d71460d4d6959e8cf4419865c, type: 3}
   bulletVelocity: 10
+  shootDelay: 0.1
 --- !u!1 &1818073023
 GameObject:
   m_ObjectHideFlags: 0

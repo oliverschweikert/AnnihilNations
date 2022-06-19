@@ -122,7 +122,7 @@ MonoBehaviour:
   player: {fileID: 0}
   eBullet: {fileID: 4917577535906970674, guid: a8ad043bec3701a06b7ec0c69b8c53ec, type: 3}
   spawner: {fileID: 0}
-  attackRate: 4
+  attackRate: 2
   attackDuration: 1
   bulletForce: 6
   speedOffset: 1

@@ -4,6 +4,7 @@ public class Enemy : MonoBehaviour
 {
     public Player player;
     public EBullet eBullet;
+    public GameObject eBullets;
     public SpawnEnemy spawner;
     public float attackRate, attackDuration, bulletForce, speedOffset, stopDistance, retreatDistance;
     public int wanderRadius;
@@ -94,7 +95,8 @@ public class Enemy : MonoBehaviour
         Vector2 bulletDir = (player.transform.position - gameObject.transform.position).normalized;
         Vector2 bulletVelocity = bulletDir * bulletForce;
         float bulletRotation = Mathf.Atan2(bulletDir.y, bulletDir.x) * Mathf.Rad2Deg;
-        EBullet bullet = Instantiate(eBullet, gameObject.transform.position, Quaternion.Euler(0, 0, bulletRotation));
+        EBullet bullet = Instantiate(eBullet, gameObject.transform.position, Quaternion.Euler(0, 0, bulletRotation), eBullets.transform);
+        bullet.player = player;
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.velocity = bulletVelocity;
         timeSinceAttack = 0;
