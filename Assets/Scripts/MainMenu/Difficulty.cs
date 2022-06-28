@@ -4,5 +4,9 @@ using UnityEngine;
 
 public class Difficulty : MonoBehaviour
 {
-    public ScriptableObject gameSettings;
+    public GameSettings gameSettings;
+    private void Start()
+    {
+        gameSettings.difficulty = GameSettings.Difficulty.Easy;
+    }
 }

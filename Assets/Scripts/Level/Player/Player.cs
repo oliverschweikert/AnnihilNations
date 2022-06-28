@@ -1,4 +1,7 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
 public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f, aimSpeed = 1f;
@@ -9,6 +12,7 @@ public class Player : MonoBehaviour
     public Camera cam;
     public Animator animator;
     public GameObject crosshair;
+    public Image damageFlashScreen;
     public HealthManager hm;
     float timeSinceMelee;
     private void Start()
@@ -75,9 +79,21 @@ public class Player : MonoBehaviour
     {
         currentHealth = currentHealth - damage < 0 ? 0 : currentHealth - damage;
         hm.RedrawHearts();
+        if (!dead)
+        {
+            StartCoroutine(ScreenFlash());
+            FindObjectOfType<AudioManager>().Play("TakeDamage");
+        }
         if (currentHealth == 0)
         {
             animator.SetBool("Dead", true);
+            AudioManager am = FindObjectOfType<AudioManager>();
+            if (Array.Find(am.sounds, sound => sound.name == "BossMusic").source.isPlaying)
+            {
+                StartCoroutine(am.FadeOut("BossMusic", 10f));
+                StartCoroutine(am.FadeIn("BackgroundMusic", 10f));
+
+            }
         }
     }
     public void KillPlayer()
@@ -100,5 +116,17 @@ public class Player : MonoBehaviour
             TakeDamage(1);
             Destroy(other.gameObject);
         }
+    }
+    private IEnumerator ScreenFlash()
+    {
+        Color c = damageFlashScreen.color;
+        for (float alpha = .8f; alpha > 0; alpha -= .02f)
+        {
+            c.a = alpha;
+            damageFlashScreen.color = c;
+            yield return new WaitForFixedUpdate();
+        }
+        c.a = 0;
+        damageFlashScreen.color = c;
     }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
-using System.Collections;
+using System;
 
 public class Enemy : MonoBehaviour
 {
@@ -70,8 +70,8 @@ public class Enemy : MonoBehaviour
     }
     private void StartWandering()
     {
-        var randomX = (Random.Range(0, wanderRadius) + 10) * multiplier[Random.Range(0, 2)];
-        var randomY = (Random.Range(0, wanderRadius) + 10) * multiplier[Random.Range(0, 2)];
+        var randomX = (UnityEngine.Random.Range(0, wanderRadius) + 10) * multiplier[UnityEngine.Random.Range(0, 2)];
+        var randomY = (UnityEngine.Random.Range(0, wanderRadius) + 10) * multiplier[UnityEngine.Random.Range(0, 2)];
         Vector3 wanderVector = new Vector3(randomX, randomY);
         wanderPos = wanderVector + player.transform.position;
         wandering = true;
@@ -102,6 +102,7 @@ public class Enemy : MonoBehaviour
         Vector2 bulletDir = (player.transform.position - gameObject.transform.position).normalized;
         Vector2 bulletVelocity = bulletDir * bulletForce;
         float bulletRotation = Mathf.Atan2(bulletDir.y, bulletDir.x) * Mathf.Rad2Deg;
+        FindObjectOfType<AudioManager>().Play("EnemyBullet");
         EBullet bullet = Instantiate(eBullet, gameObject.transform.position, Quaternion.Euler(0, 0, bulletRotation), eBullets.transform);
         currentBullets.Add(bullet);
         bullet.player = player;

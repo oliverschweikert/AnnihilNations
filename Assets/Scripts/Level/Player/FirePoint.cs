@@ -30,5 +30,7 @@ public class FirePoint : MonoBehaviour
         Rigidbody2D rb = newBullet.GetComponent<Rigidbody2D>();
         rb.velocity = bulletDirection * bulletVelocity;
         timeSinceShoot = 0;
+
+        FindObjectOfType<AudioManager>().Play("PlayerBullet");
     }
 }

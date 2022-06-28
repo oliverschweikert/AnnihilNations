@@ -11,6 +11,7 @@ public class SpawnEnemy : MonoBehaviour
     public int spawnOffset, spawnSpread, enemiesRemaining, enemiesEasy, enemiesMedium, enemiesHard;
     public TMP_Text enemyCountUI, waveNumUI;
     public GameObject eBullets;
+    public GameAudio gameAudio;
     int waveCount;
     private void Start()
     {
@@ -54,6 +55,8 @@ public class SpawnEnemy : MonoBehaviour
         {
             AddEnemy(wave, i);
         }
+        StartCoroutine(gameAudio.audioManager.FadeIn("BossMusic", 10f));
+        StartCoroutine(gameAudio.audioManager.FadeOut("BackgroundMusic", 10f));
     }
     private void AddEnemy(GameObject wave, int enemyID)
     {
@@ -90,7 +93,11 @@ public class SpawnEnemy : MonoBehaviour
     {
         enemiesRemaining--;
         if (enemiesRemaining == 0)
+        {
             enemyCountUI.SetText($"Wave Complete");
+            StartCoroutine(gameAudio.audioManager.FadeOut("BossMusic", 10f));
+            StartCoroutine(gameAudio.audioManager.FadeIn("BackgroundMusic", 10f));
+        }
         else
             enemyCountUI.SetText($"Enemies Remaining: {enemiesRemaining}");
     }
