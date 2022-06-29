@@ -10,6 +10,6 @@ public class SettingsVolume : MonoBehaviour
     public TextMeshProUGUI volumeLabel;
     public AudioMixer audioMixer;
     public void UpdateVolumeLabel(float vol) { volumeLabel.text = (vol + 80).ToString(); }
-    public void SetMusicVolume(float vol) { audioMixer.SetFloat("musicVolume", vol); }
-    public void SetEffectsVolume(float vol) { audioMixer.SetFloat("effectsVolume", vol); }
+    public void SetMusicVolume(float vol) { audioMixer.SetFloat("MusicVolume", vol); }
+    public void SetEffectsVolume(float vol) { audioMixer.SetFloat("EffectVolume", vol); }
 }

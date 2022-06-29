@@ -1,0 +1,852 @@
+fileFormatVersion: 2
+guid: e06dc09f61b6629d78b0aaa71e478bae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4124325607674931086
+    second: hero - moving shooting_0
+  - first:
+      213: 7443681005710776826
+    second: hero - moving shooting_1
+  - first:
+      213: -6301355115770701061
+    second: hero - moving shooting_2
+  - first:
+      213: -7820475194179711251
+    second: hero - moving shooting_3
+  - first:
+      213: -8928586885614524249
+    second: hero - moving shooting_4
+  - first:
+      213: -956680141305197962
+    second: hero - moving shooting_5
+  - first:
+      213: -7718139068899911918
+    second: hero - moving shooting_6
+  - first:
+      213: -5943291141261835823
+    second: hero - moving shooting_7
+  - first:
+      213: -3041510684118472651
+    second: hero - moving shooting_8
+  - first:
+      213: 8892797511008093441
+    second: hero - moving shooting_9
+  - first:
+      213: -4938422544760251001
+    second: hero - moving shooting_10
+  - first:
+      213: -5350661766220403125
+    second: hero - moving shooting_11
+  - first:
+      213: 8521843004515582744
+    second: hero - moving shooting_12
+  - first:
+      213: 2171670749040579671
+    second: hero - moving shooting_13
+  - first:
+      213: -1417324974347508580
+    second: hero - moving shooting_14
+  - first:
+      213: 2830242466922059042
+    second: hero - moving shooting_15
+  - first:
+      213: 5327765355605746097
+    second: hero - moving shooting_16
+  - first:
+      213: 5966221295227795232
+    second: hero - moving shooting_17
+  - first:
+      213: -8908708605772285781
+    second: hero - moving shooting_18
+  - first:
+      213: -8194435908906610490
+    second: hero - moving shooting_19
+  - first:
+      213: -2049520162945742533
+    second: hero - moving shooting_20
+  - first:
+      213: 736804782190532468
+    second: hero - moving shooting_21
+  - first:
+      213: -6670691660889845059
+    second: hero - moving shooting_22
+  - first:
+      213: -3682569943367343871
+    second: hero - moving shooting_23
+  - first:
+      213: -3378895007903037085
+    second: hero - moving shooting_24
+  - first:
+      213: -2741679542267449799
+    second: hero - moving shooting_25
+  - first:
+      213: 1466928375805199524
+    second: hero - moving shooting_26
+  - first:
+      213: -778386859474959740
+    second: hero - moving shooting_27
+  - first:
+      213: 3683503145255755577
+    second: hero - moving shooting_28
+  - first:
+      213: 7072838546245676284
+    second: hero - moving shooting_29
+  - first:
+      213: -1449118426179165394
+    second: hero - moving shooting_30
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hero - moving shooting_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1219
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2781d7026b373c6c0800000000000000
+      internalID: -4124325607674931086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_1
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1219
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af996b6bf644d4760800000000000000
+      internalID: 7443681005710776826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_2
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1219
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa95e088e61d88a0800000000000000
+      internalID: -6301355115770701061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_3
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1219
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee0a2cde37187390800000000000000
+      internalID: -7820475194179711251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_4
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1048
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a82cb08889471480800000000000000
+      internalID: -8928586885614524249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_5
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1048
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a45ddea7039b2f0800000000000000
+      internalID: -956680141305197962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_6
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1048
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2171827c869a3e490800000000000000
+      internalID: -7718139068899911918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_7
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1048
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1cc582230358da0800000000000000
+      internalID: -5943291141261835823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_8
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 877
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538209cb5226ac5d0800000000000000
+      internalID: -3041510684118472651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_9
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 877
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1058d1f5830996b70800000000000000
+      internalID: 8892797511008093441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_10
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 877
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78dd8c44cd2377bb0800000000000000
+      internalID: -4938422544760251001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_11
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 877
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e2b2ff871aeb5b0800000000000000
+      internalID: -5350661766220403125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_12
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 706
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8138ccbdf0ba34670800000000000000
+      internalID: 8521843004515582744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_13
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 706
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7549bad4a03532e10800000000000000
+      internalID: 2171670749040579671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_14
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 706
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c942ab4f176a45ce0800000000000000
+      internalID: -1417324974347508580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_15
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 706
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2255d15478a074720800000000000000
+      internalID: 2830242466922059042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_16
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1638bfc5600f940800000000000000
+      internalID: 5327765355605746097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_17
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0277c6958a64cc250800000000000000
+      internalID: 5966221295227795232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_18
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba83a7139b8ed5480800000000000000
+      internalID: -8908708605772285781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_19
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 535
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c09ae2f4f3874e80800000000000000
+      internalID: -8194435908906610490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_20
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 364
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b394e974544ae83e0800000000000000
+      internalID: -2049520162945742533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_21
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 364
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477964fab08a93a00800000000000000
+      internalID: 736804782190532468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_22
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 364
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2108af641fc63a0800000000000000
+      internalID: -6670691660889845059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_23
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 364
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1012f09c522e4ecc0800000000000000
+      internalID: -3682569943367343871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_24
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 193
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369499874e0cb11d0800000000000000
+      internalID: -3378895007903037085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_25
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 193
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e613b7bf893f9d0800000000000000
+      internalID: -2741679542267449799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_26
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 193
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a44fcee5939b5410800000000000000
+      internalID: 1466928375805199524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_27
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 22
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482c92f764d9235f0800000000000000
+      internalID: -778386859474959740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_28
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 22
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fd006389e6e1330800000000000000
+      internalID: 3683503145255755577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_29
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 22
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfce9ae2f25c72260800000000000000
+      internalID: 7072838546245676284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero - moving shooting_30
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 22
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e232e1a1872b3ebe0800000000000000
+      internalID: -1449118426179165394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
