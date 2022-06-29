@@ -5,7 +5,7 @@ public class GameSettings : ScriptableObject
 {
     public enum Difficulty { Easy, Medium, Hard };
     public Difficulty difficulty;
-    public void DifficultyEasy() { difficulty = Difficulty.Easy; Debug.Log(difficulty.ToString()); }
-    public void DifficultyMedium() { difficulty = Difficulty.Medium; Debug.Log(difficulty.ToString()); }
-    public void DifficultyHard() { difficulty = Difficulty.Hard; Debug.Log(difficulty.ToString()); }
+    public void DifficultyEasy() { difficulty = Difficulty.Easy; }
+    public void DifficultyMedium() { difficulty = Difficulty.Medium; }
+    public void DifficultyHard() { difficulty = Difficulty.Hard; }
 }
